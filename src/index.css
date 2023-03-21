@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body {
+  background: linear-gradient(90deg, #bcdddd 0%, #e46008 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#calc {
+  margin-top: 5rem;
+  width: 400px;
+  padding: 1.0em;
+  background-color: #40ceff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  
+  border-radius: 2%;
+}
+
+
+ 
+#calc h3 {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #0b0c0c;
+}
+
+#operations {
+  text-align: right;
+}
+
+#previous-operation {
+  color: #0b0c0c;
+  padding: 0.2em;
+  overflow-wrap: break-word; /* Evitar o número sair da div e da tela que eu especefiquei */
+  min-height: 1.6em;
+}
+
+#current-operation {
+  min-height: 1.6em;
+  font-size: 3em;
+  font-weight: 700;
+  padding: 0.2em;
+  overflow-wrap: break-word;
+}
+
+#buttonsMain {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  gap: 3px;
+}
+
+#buttonsMain button {
+  border: 1px solid transparent;
+  border-radius: 0;
+  height: 4em;
+  font-size: 1.2em;
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+
+#buttonsMain .number {
+  background-color: #f3f3f3;
+}
+
+#buttonsMain button:hover {
+  background-color: #bababa;
+  border-color: #999;
+}
+
+#buttonsMain #equal-btn {
+  grid-column: span 2;
+  background-color: #75a5cb;
+}
+
+
+#buttons-container #equal-btn:hover {
+  grid-column: span 2;
+  background-color: #3a91d8;
+}
